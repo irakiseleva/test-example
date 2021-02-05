@@ -48,7 +48,7 @@ method: PUT, </br>
 "comment": string
 },
 ```
-В случае ошибки  вернет 400.
+В случае ошибки  вернет 400 или 500.
 
 
 
@@ -63,3 +63,11 @@ method: PUT, </br>
 
 1.  Скачать зависимости: `npm install`
 2.  Запустить приложение: `npm start`
+
+
+Для запуска бэка необходим:
+[docker](https://docs.docker.com/get-docker/)
+
+После устовки, в директории **test-example**:
+1. Собрать образ: `docker build -t microblogbackend microblogbackend/`
+2. Запустить его в контейнере: `docker run -p 8001:5000 microblogbackend:latest`
