@@ -9,12 +9,6 @@ export class Blog extends React.Component<any, any> {
     render() {
         return (
             <div className="wrapper">
-                <div className="formBlog">
-                    <h2>Форма добавления записи</h2>
-                    <div>Заголовок записи</div>
-                    <div>Текст заметки</div>
-                    <div>Кнопка "Добавить запись"</div>
-                </div>
                 <ul className="list-group listBlog">
                     <h2>Список записей</h2>
                     <li className="list-group-item">Запись 1</li>

@@ -1,11 +1,8 @@
-type CreateMessageProps = {
-    onSend: (message: string) => void;
-};
-
 type Message = {
+    comment: string;
+    date: string;
     id: number;
-    price: string;
-    name: string;
+    title: string;
 };
 
 
